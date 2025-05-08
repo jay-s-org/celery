@@ -1,0 +1,5 @@
+[config]
+# models
+model="gemini/gemini-2.5-flash-preview-04-17"
+model_turbo="gemini/gemini-2.5-flash-preview-04-17"
+fallback_models=["gemini/gemini-2.5-pro-exp-03-25"]
