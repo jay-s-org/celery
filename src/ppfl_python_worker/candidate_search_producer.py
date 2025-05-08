@@ -21,7 +21,8 @@ def get_keycloak_token():
     password = os.environ.get("ADMIN_PASSWORD")
 
     if not all([token_url, client_id, username, password]):
-        raise ValueError("Missing required Keycloak environment variables.")
+        msg = "Missing required Keycloak environment variables."
+        raise ValueError(msg)
 
     data = {
         "grant_type": "password",
